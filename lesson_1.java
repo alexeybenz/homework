@@ -1,5 +1,5 @@
 public class lesson_1 {
-    public static void main(String[] args) {    // 1.прописал метод mail()
+    public static void main(String[] args) {    // 1.прописал метод main()
         byte a = 100;                           // 2.создал переменные и инициализировал их
         short b = 30000;
         int c = -1111;
@@ -18,7 +18,7 @@ public class lesson_1 {
         return 10 <= x1 + x2 && x1 + x2 <= 20;
     }
 
-    public static void isPositiveOrNegative(int x) {            // 5. положительное || отрицатеьное
+    public static void isPositiveOrNegative(int x) {            // 5. положительное || отрицательное
         if(x >= 0)  {
             System.out.println("Число положительное");
         }   else    {
@@ -35,5 +35,9 @@ public class lesson_1 {
 
     public static void greetings(String name) {                 // 7.метод выводит сообщение в консоль
         System.out.println("Привет, указанное имя!");
+    }
+
+    public static boolean leapYear(int year) {
+        return (year % 100 != 0) && (year % 4 == 0) || (year % 400 == 0);
     }
 }
